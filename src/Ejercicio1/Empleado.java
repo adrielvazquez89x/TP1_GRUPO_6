@@ -20,6 +20,12 @@ public class Empleado {
 		this.edad = 99;
 	}
 	
+	public Empleado(String nombre, int edad) {
+		cont++;
+		this.id=cont;
+		this.nombre=nombre;
+		this.edad=edad;
+	}
 	//GETTERS && SETTERS
 	public String getNombre() {
 		return nombre;
@@ -37,6 +43,9 @@ public class Empleado {
 		this.edad = edad;
 	}
 
+	public int getId() {
+		return id;
+	}
 	
 	
 	
