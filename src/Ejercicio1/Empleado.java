@@ -27,7 +27,7 @@ public class Empleado {
 	{
 		this.id=cont++;
 		this.nombre=nombre;
-		this.edad=edad;
+		setEdad(edad);
 	}
 	//GETTERS && SETTERS
 	public String getNombre() {
@@ -43,7 +43,10 @@ public class Empleado {
 	}
 
 	public void setEdad(int edad) {
-		this.edad = edad;
+		if(edad < 0)
+			this.edad = 99;
+		else
+			this.edad = edad;
 	}
 
 	public int getId() {
@@ -53,13 +56,6 @@ public class Empleado {
 	//7. Metodo toString()
 	@Override
 	public String toString() {
-		return "Empleado ID:" + id + ", Nombre:" + nombre + ", Edad:" + edad;
+		return "Empleado \nID:" + id + "\nNombre:" + nombre + "\nEdad:" + edad + "\n";
 	}
-	
-	
-	
-	
-	
-	
-	
 }
