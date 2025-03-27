@@ -13,7 +13,6 @@ public class Empleado {
 	
 	//6. Crear metodo estatico devuelve proximo Id
 	public static int devuelveProximoID() {
-		
 		return cont+1;
 	}
 	//CONSTRUCTORES
