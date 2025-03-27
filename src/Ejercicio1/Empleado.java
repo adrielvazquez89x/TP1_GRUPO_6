@@ -11,6 +11,11 @@ public class Empleado {
 	
 	private static int cont=999;
 	
+	//6. Crear metodo estatico devuelve proximo Id
+	public static int devuelveProximoID() {
+		
+		return cont+1;
+	}
 	//CONSTRUCTORES
 	public Empleado()
 	{
@@ -45,6 +50,12 @@ public class Empleado {
 
 	public int getId() {
 		return id;
+	}
+
+	//7. Metodo toString()
+	@Override
+	public String toString() {
+		return "Empleado ID:" + id + ", Nombre:" + nombre + ", Edad:" + edad;
 	}
 	
 	
