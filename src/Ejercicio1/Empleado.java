@@ -51,7 +51,7 @@ public class Empleado {
 	public int getId() {
 		return id;
 	}
-
+	
 	//7. Metodo toString()
 	@Override
 	public String toString() {
