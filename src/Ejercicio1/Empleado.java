@@ -9,24 +9,23 @@ public class Empleado {
 	private String nombre;
 	private int edad;
 	
-	private static int cont=999;
+	private static int cont=1000;
 	
 	//6. Crear metodo estatico devuelve proximo Id
 	public static int devuelveProximoID() {
-		return cont+1;
+		return cont;
 	}
 	//CONSTRUCTORES
 	public Empleado()
 	{
-		cont++;
-		this.id = cont;
+		this.id = cont++;;
 		this.nombre = "sin nombre";
 		this.edad = 99;
 	}
 	
-	public Empleado(String nombre, int edad) {
-		cont++;
-		this.id=cont;
+	public Empleado(String nombre, int edad) 
+	{
+		this.id=cont++;
 		this.nombre=nombre;
 		this.edad=edad;
 	}

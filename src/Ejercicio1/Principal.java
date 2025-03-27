@@ -14,11 +14,9 @@ public class Principal {
 	Empleado[] Vempleados = new Empleado[5];
 	Vempleados[0]= uno;
 	Vempleados[1]= dos;	
+	Vempleados[2] = new Empleado("Jose",18);
 
-	System.out.println(uno.toString());	
-	
-	System.out.println(dos.toString());
-	
+
 	//Otra opcion para imprimir la info:
 	for (Empleado e : Vempleados) {
 		System.out.println(e.toString());
