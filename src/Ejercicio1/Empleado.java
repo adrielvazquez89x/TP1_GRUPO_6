@@ -43,10 +43,7 @@ public class Empleado {
 	}
 
 	public void setEdad(int edad) {
-		if(edad < 0)
-			this.edad = 99;
-		else
-			this.edad = edad;
+		this.edad = (edad < 0) ? 99 : edad;
 	}
 
 	public int getId() {
