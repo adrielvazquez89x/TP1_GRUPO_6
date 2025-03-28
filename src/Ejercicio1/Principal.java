@@ -8,7 +8,7 @@ public class Principal {
 	uno.setNombre("Jose");
 	uno.setEdad(30);
 	
-	Empleado dos = new Empleado("Agustina",-1);
+	Empleado dos = new Empleado("Agustina!!!",-1);
 	Empleado tres = new Empleado("Jesus", 33);
 	Empleado cuatro = new Empleado("Santiago", 11);
 	Empleado cinco = new Empleado();
