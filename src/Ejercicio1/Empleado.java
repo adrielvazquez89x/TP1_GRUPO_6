@@ -26,7 +26,7 @@ public class Empleado {
 	public Empleado(String nombre, int edad) 
 	{
 		this.id=cont++;
-		this.nombre=nombre;
+		setNombre(nombre);
 		setEdad(edad);
 	}
 	//GETTERS && SETTERS
@@ -35,7 +35,12 @@ public class Empleado {
 	}
 
 	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	if (nombre == null || nombre.trim().isEmpty() || !nombre.matches("[a-zA-ZáéíóúÁÉÍÓÚñÑ\\s]+")) 
+	{
+        	this.nombre = "No valido";
+    	} else {
+        	this.nombre = nombre;
+    		}
 	}
 
 	public int getEdad() {
