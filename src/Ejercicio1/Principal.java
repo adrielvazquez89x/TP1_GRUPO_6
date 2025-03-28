@@ -30,7 +30,7 @@ public class Principal {
 	Vempleados[2] = new Empleado("Jose",18);
 	Vempleados[3] = new Empleado("Marta", 105);
 	Vempleados[4] = new Empleado("Roberto", 50);
-
+	
 	System.out.println("IMPRESION UTILIZANDO FOR EACH: \n");
 	//Otra opcion para imprimir la info:
 	for (Empleado e : Vempleados) {
@@ -39,6 +39,22 @@ public class Principal {
 	System.out.println("-------------------------\n");
 	
 	System.out.println("El proximo id es: " + Empleado.devuelveProximoID());
+	
+	//Agregado además de la consigna proporcionada:
+	System.out.println("Lo siguiente es agregado además de la consigna: ");
+	
+	int[] vEmpleadosEdades = new int[8];
+	vEmpleadosEdades[0] = uno.getEdad();
+	vEmpleadosEdades[1] = dos.getEdad();
+	vEmpleadosEdades[2] = tres.getEdad();
+	vEmpleadosEdades[3] = cuatro.getEdad();
+	vEmpleadosEdades[4] = cinco.getEdad();
+	vEmpleadosEdades[5] = Vempleados[2].getEdad();
+	vEmpleadosEdades[6] = Vempleados[3].getEdad();
+	vEmpleadosEdades[7] = Vempleados[4].getEdad();
+	
+	System.out.println(Empleado.retornarPromedioEdades(vEmpleadosEdades));
+
 		
 	}
 

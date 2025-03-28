@@ -13,12 +13,12 @@ public class Empleado {
 	
 	//6. Crear metodo estatico devuelve proximo Id
 	public static int devuelveProximoID() {
-		return cont + 1;
+		return cont;
 	}
 	//CONSTRUCTORES
 	public Empleado()
 	{
-		this.id = cont++;;
+		this.id = cont++;
 		this.nombre = "sin nombre";
 		this.edad = 99;
 	}
@@ -58,4 +58,21 @@ public class Empleado {
 	public String toString() {
 		return "Empleado \nID:" + id + "\nNombre:" + nombre + "\nEdad:" + edad + "\n";
 	}
+	
+	//Agregado además de la consigna proporcionada:
+	
+	public static int calcularPromedioEdades(int[] vEmpleadosEdades) {
+		int sumaEdades = 0;
+		
+		for (int edad : vEmpleadosEdades) {
+			sumaEdades+= edad;
+		}
+		
+		return sumaEdades / vEmpleadosEdades.length;
+	}
+	
+	public static String retornarPromedioEdades(int[] vEmpleadosEdades) {
+		return "La edad promedio de los empleados es: " + calcularPromedioEdades(vEmpleadosEdades);
+	}
+	
 }
