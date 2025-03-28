@@ -69,7 +69,26 @@ public class Empleado {
 	}
 	
 	public static String retornarPromedioEdades(int[] vEmpleadosEdades) {
-		return "La edad promedio de los empleados es: " + calcularPromedioEdades(vEmpleadosEdades);
+		return "La edad promedio de los empleados es: " + calcularPromedioEdades(vEmpleadosEdades) + " años";
 	}
+	
+	
+	public static int buscarEdadMaxima(int[] vEmpleadosEdades) {
+	    int maxEdad = vEmpleadosEdades[0]; 
+	    for (int edad : vEmpleadosEdades) {
+	        if (edad > maxEdad) {
+	            maxEdad = edad; 
+	        }
+	    }
+	    return maxEdad;
+	}
+	
+	
+	public static String retornarEdadMaxima(int[] vEmpleadosEdades) {
+		return "La edad maxima es: " + buscarEdadMaxima(vEmpleadosEdades) + " años";
+	}
+	  
+	
+	
 	
 }

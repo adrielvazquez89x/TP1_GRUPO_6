@@ -54,6 +54,8 @@ public class Principal {
 	vEmpleadosEdades[7] = Vempleados[4].getEdad();
 	
 	System.out.println(Empleado.retornarPromedioEdades(vEmpleadosEdades));
+	
+	System.out.println(Empleado.retornarEdadMaxima(vEmpleadosEdades));
 
 		
 	}
